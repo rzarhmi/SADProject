@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="AddEmployee.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee</title>
+</head>
+<body>
+
+<div class="container">
+    <form action="action_page.php">
+        <div class="row">
+            <div class="col-25">
+                <label for="card-number">Employee Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="current-charge" name="charge">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="card-number">Monthly Wage (Rls)</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="charge-amount" name="charge" placeholder="0">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="card-number">Employee ID</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="card-number" name="firstname" placeholder="93...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="curency">Employee Type</label>
+            </div>
+            <div class="col-75">
+                <select id="curency" name="country">
+                    <option value="KhayeMal">KW</option>
+                    <option value="Euro">IW</option>
+                    <option value="Franc">DW</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="note">Note</label>
+            </div>
+            <div class="col-75">
+                <textarea id="note" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="add">
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>

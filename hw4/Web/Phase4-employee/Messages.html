@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="Messages.css" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Messages</title>
+</head>
+<body>
+
+<header class="header" id="myHeader">
+    <div class="container" id="myContainer">
+        <!--<img src="lights.jpg" class="containerImg">-->
+        <a href="#"><img src="logo.png" alt="logo" class="logo"></a>
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn" style="font-style: italic;" >
+                            Navid Padid
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Edit Profile</a>
+                            <a href="#">Log Out</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Check requested transactions</a> </li>
+                <li><a href="#">previous transactions</a> </li>
+                <li><a href="#" style="color: white;">messages</a></li>
+                <!--<li><a href="#">sign up</a> </li>-->
+                <li><a href="javascript:void(0);" class="icon" onclick="navbarResponsive()">
+                    <i class="fa fa-bars"></i>
+                </a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+</header>
+
+<div class="content">
+
+    <div class="headPic">
+    </div>
+
+    <div class="table_container">
+        <table>
+            <caption style="color: white; padding-bottom: 20px">Messages</caption>
+            <thead>
+            <tr>
+                <th>Sender</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Message</th>
+                <th>Response</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="#" style="color: white">Red Hat</a></td>
+                <td>06-07-2018</td>
+                <td>22:24</td>
+                <td>Yo dude, sup? just checking on you, happy confirming the hell out of customer. bye.</td>
+                <td><a href="#" style="color: white; font-style: italic"> Responded</a></td>
+
+            </tr>
+            <tr>
+                <td><a href="#" style="color: white">Reza Rahimi</a></td>
+                <td>08-05-2017</td>
+                <td>22:12</td>
+                <td>Come on bro, sup with my request pending for so long ? get to work bro</td>
+                <td><input type="submit" value="respond"></td>
+            </tr>
+            <tr>
+                <td><a href="#" style="color: white">Manager</a></td>
+                <td>04-02-2018</td>
+                <td>11:23</td>
+                <td>My Office, now!</td>
+                <td><input type="submit" value="respond"></td>
+            </tr>
+            <tr>
+                <td><a href="#" style="color: white">Azizam Bebakhshid</a></td>
+                <td>03-11-2017</td>
+                <td>15:47</td>
+                <td>Love your services, keep up the good work.</td>
+                <td><a href="#" style="color: white; font-style: italic"> Responded</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+</div>
+
+
+<script>
+
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    //    alert(header)
+    var sticky = header.offsetTop;
+    function myFunction() {
+
+//                alert(window.pageYOffset)
+//        alert(header.className)
+//        alert(sticky)
+        if (window.pageYOffset >= sticky) {
+            header.classList.add("sticky");
+//            alert("dundun")
+        } else {
+            header.classList.remove("sticky");
+//            alert("dundun")
+        }
+    }
+
+
+
+    function navbarResponsive() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+
+
+</script>
+
+
+</body>
+</html>

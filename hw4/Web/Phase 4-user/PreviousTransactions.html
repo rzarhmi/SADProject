@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="Tests.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>My Transactions</title>
+</head>
+<body>
+
+<header class="header" id="myHeader">
+    <div class="container" id="myContainer">
+        <!--<img src="lights.jpg" class="containerImg">-->
+        <a href="#"><img src="logo.png" alt="logo" class="logo"></a>
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn" style="font-style: italic;" >
+                            Reza Rahimi
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" style="color: firebrick;">My Transactions</a>
+                            <a href="#">My Wallet</a>
+                            <a href="#">Edit Profile</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Log Out</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">convert currencies</a> </li>
+                <li><a href="#">charge credit</a> </li>
+                <li><a href="#">make a transaction</a></li>
+                <li><a href="#">messages</a></li>
+                <!--<li><a href="#">sign up</a> </li>-->
+                <li><a href="javascript:void(0);" class="icon" onclick="navbarResponsive()">
+                    <i class="fa fa-bars"></i>
+                </a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+</header>
+
+<div class="content">
+
+    <div class="headPic">
+    </div>
+
+    <!--<div class="buttons">-->
+
+        <!--<div id="commisiionRate">-->
+            <!--<p class="rounded">-->
+                <!--<button class="buttonOut"><span style="color: #878787"></span> COMMISION RATE <span style="color: #878787"></span></button>-->
+            <!--</p>-->
+        <!--</div>-->
+
+        <!--<div id="convertCurrency">-->
+            <!--<p class="rounded">-->
+                <!--<button class="buttonOut"><span style="color: #878787"></span> CONVERT CURRENCIES <span style="color: #878787"></span></button>-->
+            <!--</p>-->
+        <!--</div>-->
+
+        <!--<div id="laws">-->
+            <!--<p class="rounded">-->
+                <!--<button class="buttonOut"><span style="color: #878787"></span> LAWS and TERMS<span style="color: #878787"></span></button>-->
+            <!--</p>-->
+        <!--</div>-->
+
+        <!--<div id="currencyWorth">-->
+            <!--<p class="rounded">-->
+                <!--<button class="buttonOut"><span style="color: #878787"></span> ONLINE CURRENCY RATE<span style="color: #878787"></span></button>-->
+            <!--</p>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <div class="table_container">
+        <table>
+            <caption style="color: white; padding-bottom: 20px">My Tansactions</caption>
+            <thead>
+            <tr>
+                <th>Transaction Type</th>
+                <th>Transaction Code</th>
+                <th>Date</th>
+                <th>Status</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Wallet Charged 3000$</td>
+                <td>101101</td>
+                <td>01-07-2016 </td>
+                <td>Finished</td>
+
+            </tr>
+            <tr>
+                <td>TOEFL Registry</td>
+                <td>101101</td>
+                <td>03-07-2016 </td>
+                <td>Finished</td>
+
+            </tr>
+            <tr>
+                <td>GRE Registry</td>
+                <td>102102</td>
+                <td>01-02-2017</td>
+                <td>Finished</td>
+
+            </tr>
+            <tr>
+                <td>IELTS Registry</td>
+                <td>103103</td>
+                <td>01-06-2018</td>
+                <td>Waitting for Approval</td>
+            </tr>
+            <tr>
+                <td>Wallet Charged 2000$</td>
+                <td>5050</td>
+                <td>05-06-2018</td>
+                <td>Finished</a></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    //    alert(header)
+    var sticky = header.offsetTop;
+    function myFunction() {
+
+//                alert(window.pageYOffset)
+//        alert(header.className)
+//        alert(sticky)
+        if (window.pageYOffset >= sticky) {
+            header.classList.add("sticky");
+//            alert("dundun")
+        } else {
+            header.classList.remove("sticky");
+//            alert("dundun")
+        }
+    }
+
+
+
+    function navbarResponsive() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+
+
+</script>
+
+
+
+</body>
+</html>
