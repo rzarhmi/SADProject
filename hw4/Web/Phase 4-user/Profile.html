@@ -1,0 +1,83 @@
+<html>
+  <head>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Material Design Bootstrap -->
+    <link href="./css/mdb.min.css" rel="stylesheet">
+    
+    <title></title>
+    <meta content="">
+    <style></style>
+  </head>
+  <body>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">  Username</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-3 col-lg-3 " align="center"> <img alt="No profile pic" src={UserDataForShow[10].url()} class="img-circle img-responsive"/> </div>
+
+                                        <div class=" col-md-9 col-lg-9 ">
+                                            <table class="table table-user-information">
+                                                <tbody>
+                                                <tr>
+                                                    <td>name:</td>
+                                                    <td>{UserDataForShow[6]}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lastname:</td>
+                                                    <td>{UserDataForShow[3]}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Signup date:</td>
+                                                    <td>{UserDataForShow[1].toLocaleString()}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Last update:</td>
+                                                    <td>{UserDataForShow[9].toLocaleString()}</td>
+                                                </tr>
+                                                <!--<tr>
+                                                    <td>Date of Birth</td>
+                                                    <td>{UserDataForShow[7]}</td>
+                                                </tr>-->
+
+                                                <tr>
+                                                    <td>Gender</td>
+                                                    <td>{UserDataForShow[4]}</td>
+                                                </tr>
+
+                                               <!-- <tr>
+                                                    <td>Country </td>
+
+                                                    <td>{UserDataForShow[8]}</td>
+                                                </tr>-->
+
+                                               <!-- <tr>
+                                                    <td>City</td>
+                                                    <td>{UserDataForShow[5]}</td>
+                                                </tr>-->
+                                                <tr>
+                                                    <td>Email</td>
+                                                    <td><a href={"mailto:"+UserDataForShow[2]} style={{color:'blue'}}>{UserDataForShow[2]}</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mobile Number</td>
+                                                    <td><a href={"mailto:"+UserDataForShow[2]} style={{color:'blue'}}>{UserDataForShow[2]}</a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  </body>
+</html>
