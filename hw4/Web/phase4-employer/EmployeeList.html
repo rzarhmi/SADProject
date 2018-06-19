@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="HandlePeople.css" rel="stylesheet" type="text/css">
+<link href="EmployeeList.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
 
@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Handle People</title>
+    <title>Employee List</title>
 </head>
 <body>
 
@@ -20,27 +20,51 @@
         <a href="#"><img src="logo.png" alt="logo" class="logo"></a>
         <nav class="topnav" id="myTopnav">
             <ul>
+
                 <li>
                     <div class="dropdown">
-                        <button class="dropbtn" style="font-style: italic;" >
-                            Omid Chehre
+                        <button class="dropbtn" >
+                            Hadnle people
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="#">Add Employer</a>
-                            <a href="#">Add Test</a>
-                            <a href="#">Charge Credit</a>
-                            <a href="#">Edit Profile</a>
-                            <a href="#">Log Out</a>
+                            <a href="#">Users List</a>
+                            <a href="#">Employee List</a>
+                            <a href="#">Add employee</a>
                         </div>
                     </div>
                 </li>
-                <li><a href="#">Home</a> </li>
-                <li><a href="#">my transactions</a> </li>
-                <li><a href="#">users' transactions</a> </li>
-                <li><a href="#">tests</a></li>
-                <li><a href="#"  style="color: white">handle users/employees</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn" >
+                            tests
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">current tests</a>
+                            <a href="#">add tests</a>
+                            <a href="#">Add employee</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn" >
+                            transactions
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">user transactions</a>
+                            <a href="#">my transactions</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li></li>
+                <li><a href="#">charge credit</a> </li>
                 <li><a href="#">messages</a></li>
+
+
                 <!--<li><a href="#">sign up</a> </li>-->
                 <li><a href="javascript:void(0);" class="icon" onclick="navbarResponsive()">
                     <i class="fa fa-bars"></i>
@@ -60,14 +84,14 @@
 
     <div class="table_container">
         <table>
-            <caption style="color: white; padding-bottom: 20px">Employee / User List</caption>
+            <caption style="color: white; padding-bottom: 20px">Employee List</caption>
             <thead>
             <tr>
-                <th>Employee / User Name</th>
+                <th>Employee Name</th>
                 <th>Status</th>
                 <th>Last Activity</th>
-                <th>Change Salary (Employee)</th>
-                <th>Discard (Employee)</th>
+                <th>Change Salary</th>
+                <th>Current Salary (Rs</th>
             </tr>
             </thead>
             <tbody>
@@ -75,50 +99,8 @@
                 <td><a href="#" style="color: white">Navid Padid</a> </td>
                 <td>Active</td>
                 <td>01-07-2018 </td>
-                <td><input type="submit" value="change"></td>
-                <td><input type="submit" value="discard"></td>
-            </tr>
-            <tr>
-                <td><a href="#" style="color: white">Reza Rahimi</a> </td>
-                <td>Active</td>
-                <td>05-06-2018 </td>
-                <td>-</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td><a href="#" style="color: white">Azizam Bebakhshid</a> </td>
-                <td>Active</td>
-                <td>04-06-2018 </td>
-                <td>-</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td><a href="#" style="color: white">Famil Door</a> </td>
-                <td>Active</td>
-                <td>03-06-2018 </td>
-                <td>-</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td><a href="#" style="color: white">Red Hat</a> </td>
-                <td>Active</td>
-                <td>03-06-2018</td>
-                <td>-</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td><a href="#" style="color: white">Pesar Khale</a> </td>
-                <td>Active</td>
-                <td>05-11-2017 </td>
-                <td>-</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td><a href="#" style="color: white">Dibi</a> </td>
-                <td>Active</td>
-                <td>23-10-207</td>
-                <td>-</td>
-                <td>-</td>
+                <td><input type="submit" value="change" style="background-color: blue"></td>
+                <td>30000000</td>
             </tr>
 
             </tbody>

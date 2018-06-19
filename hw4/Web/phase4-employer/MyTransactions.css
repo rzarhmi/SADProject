@@ -130,7 +130,7 @@ nav > ul > li > a::before{
     display: block;
     height: 5px;
     width: 0;
-    top:-5px;
+    top:-8px;
     background-color: #444;
     position: absolute;
     transition: all ease-in-out 250ms;
@@ -169,6 +169,9 @@ nav a:hover::before{
     .topnav a.icon {
         float: left;
         display: block;
+    }
+    nav > ul > li > a::before{
+        display: none;
     }
 }
 
@@ -215,15 +218,29 @@ nav a:hover::before{
     overflow: hidden;
 }
 
-.dropdown .dropbtn {
-    /*font-size: 16px;*/
+.dropbtn{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0;
+    font-weight: 900;
+    font-size: 20px;
+    /*margin-top: 10px;*/
+    /*size: 20;*/
+}
+
+.dropdown {
+    /*font-size: 6px;*/
     border: none;
     outline: none;
     /*color: white;*/
     /*padding: 14px 16px;*/
-    background-color: inherit;
+
     font-family: 'Fjalla One', sans-serif;
     margin: 0;
+    /*padding-top: 10px;*/
+    /*padding-bottom: 0;*/
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
@@ -234,7 +251,7 @@ nav a:hover::before{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 170px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }

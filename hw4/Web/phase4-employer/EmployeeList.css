@@ -29,7 +29,7 @@ table {
 
     width: 100%;
     /*margin-left: 100px;*/
-    max-width: 1400px;
+    max-width: 1200px;
     /*width: 1000px;*/
     border-collapse: collapse;
     overflow: hidden;
@@ -130,7 +130,7 @@ nav > ul > li > a::before{
     display: block;
     height: 5px;
     width: 0;
-    top:-5px;
+    top:-8px;
     background-color: #444;
     position: absolute;
     transition: all ease-in-out 250ms;
@@ -219,30 +219,28 @@ nav a:hover::before{
 }
 
 .dropbtn{
-    border: none;
-    outline: none;
-    background-color: inherit;
-    font-family: 'Fjalla One', sans-serif;
-    margin: 0;
     font-weight: 900;
     font-size: 20px;
-    /*margin-top: 10px;*/
-    /*size: 20;*/
-}
-
-.dropdown {
-    /*font-size: 6px;*/
     border: none;
     outline: none;
     /*color: white;*/
     /*padding: 14px 16px;*/
-
+    background-color: inherit;
     font-family: 'Fjalla One', sans-serif;
     margin: 0;
-    /*padding-top: 10px;*/
-    /*padding-bottom: 0;*/
 }
 
+.dropdown .dropbtn {
+    /*font-size: 16px;*/
+    border: none;
+    outline: none;
+    /*color: white;*/
+    /*padding: 14px 16px;*/
+    background-color: inherit;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0;
+
+}
 .topnav a:hover, .dropdown:hover .dropbtn {
     /*background-color: red;*/
 }
@@ -401,27 +399,8 @@ nav a:hover::before{
 }
 
 
-
-.confirm {
+input[type=submit] {
     background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: left;
-}
-.discard{
-    background-color: red;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: left;
-}
-.details{
-    background-color: blue;
     color: white;
     padding: 12px 20px;
     border: none;

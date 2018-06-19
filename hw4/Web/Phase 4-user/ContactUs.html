@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link href="UserIface.css" rel="stylesheet" type="text/css">
+<link href="ContactUs.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <head>
     <meta charset="UTF-8">
-    <title>User</title>
+    <title>Contact Us</title>
 </head>
 <body>
+<script>
+    function mySubmitFunction(evt) {
+  if (!notempty(document.getElementById('note'))){
+  evt.preventDefault();
+  }
+  }
+  
+  function notempty(inputtxt)
+{
+  let phoneno = /^$|s+/;
+  if(inputtxt.value.match(phoneno) || (inputtxt.value == '') )
+  {
+      alert("Not a valid Charge Amount");
+      return false;
+  }
+  else
+  {
+     
+     return true;
+  }
+}
+}
+</script> 
 <header class="header" id="myHeader">
     <div class="container" id="myContainer">
         <!--<img src="lights.jpg" class="containerImg">-->
@@ -30,7 +51,7 @@
                             <a href="#">My Wallet</a>
                             <a href="#">View Profile</a>
                             <a href="#">Edit Profile</a>
-                            <a href="#">Contact Us</a>
+                            <a href="#" style="color: firebrick;">Contact Us</a>
                             <a href="#">Log Out</a>
                         </div>
                     </div>
@@ -50,79 +71,28 @@
 
     </div>
 </header>
-
-<div class="content">
-
-    <div class="headPic">
-    </div>
-
-    <div class="buttons">
-
-        <div id="commisiionRate">
-            <p class="rounded">
-                <button class="buttonOut"><span style="color: #878787"></span> COMMISION RATE <span style="color: #878787"></span></button>
-            </p>
-        </div>
-
-        <div id="convertCurrency">
-            <p class="rounded">
-                <button class="buttonOut"><span style="color: #878787"></span> CONVERT CURRENCIES <span style="color: #878787"></span></button>
-            </p>
-        </div>
-
-        <div id="laws">
-            <p class="rounded">
-                <button class="buttonOut"><span style="color: #878787"></span> LAWS and TERMS<span style="color: #878787"></span></button>
-            </p>
-        </div>
-
-        <div id="currencyWorth">
-            <p class="rounded">
-                <button class="buttonOut"><span style="color: #878787"></span> ONLINE CURRENCY RATE<span style="color: #878787"></span></button>
-            </p>
-        </div>
-
-    </div>
-
+<div class="headPic">
 </div>
-
-
-
-<script>
-
-    window.onscroll = function() {myFunction()};
-
-    var header = document.getElementById("myHeader");
-    //    alert(header)
-    var sticky = header.offsetTop;
-    function myFunction() {
-
-//                alert(window.pageYOffset)
-//        alert(header.className)
-//        alert(sticky)
-        if (window.pageYOffset >= sticky) {
-            header.classList.add("sticky");
-//            alert("dundun")
-        } else {
-            header.classList.remove("sticky");
-//            alert("dundun")
-        }
-    }
-
-
-
-    function navbarResponsive() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-
-
-
-</script>
+<br>
+<br>
+<br>
+<div class="messageContainer">
+    <form>
+        <div class="row">
+            <div class="col-25">
+                <label for="note" style="color: #32a898; font-size: larger">Write your message <here></here>: </label>
+            </div>
+            <br>
+            <div class="col-75">
+                <textarea id="note" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <input type="submit" value="Send" id="submitForm" onClick="mySubmitFunction()">
+        </div>
+    </form>
+</div>
 
 </body>
 </html>

@@ -71,7 +71,7 @@ function cvv2(inputtxt)
         </div>
         <div class="row">
             <div class="col-25">
-                <label for="card-number">Card Number</label>
+                <label for="card-number">Card Pin</label>
             </div>
             <div class="col-75">
                 <input type="text" id="card-number" name="firstname" placeholder="Pin...">

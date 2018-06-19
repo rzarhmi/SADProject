@@ -11,7 +11,42 @@
     <title>My Transactions</title>
 </head>
 <body>
+<script>
+    function mySubmitFunction(evt) {
+    alert("skjda")
+  if (!initcurr(document.getElementById('initcurr')) || !destcurr(document.getElementById('destcurr'))){
+  evt.preventDefault();
+  }
+  }
+  
+  function initcurr(inputtxt)
+{
+  let phoneno = /^(09)([0-9]{9})$/;
+  if(inputtxt.value.match(phoneno) || (inputtxt.value == '') || parseInt(inputtxt.value)>50)
+  {
+      return true;
+  }
+  else
+  {
+     alert("Not a valid Charge Amount");
+     return false;
+  }
+}
+function destcurr(inputtxt)
+{
+  let phoneno = /^(09)([0-9]{9})$/;
+  if(inputtxt.value.match(phoneno) || (inputtxt.value == '') || parseInt(inputtxt.value)>50 )
+  {.to
+      return true;
+  }
+  else
+  {
+     alert("Not a valid Charge Amount");
+     return false;
+  }
+}
 
+</script> 
 <header class="header" id="myHeader">
     <div class="container" id="myContainer">
         <!--<img src="lights.jpg" class="containerImg">-->
@@ -96,14 +131,14 @@
                 <option value="Rial">Rial</option>
                 <option value="Franc">Franc</option>
                 </select> </td>
-                <td><input type='text' style='max-width:100px'></td>
+                <td><input type='text' style='max-width:100px' id='initcurr'></td>
                  <td><select>
                 <option value="Dollar">Dollar</option>
                 <option value="Rial">Rial</option>
                 <option value="Franc">Franc</option>
                 </select> </td>
-                <td><input type='text' style='max-width:100px'></td>
-                <td><input value="confirm" style="background-color: #4CAF50;color: white;padding: 12px 20px;border: none;border-radius: 4px;cursor: pointer;float: left;" type='submit'></td>
+                <td><input type='text' style='max-width:100px' id="destcurr"></td>
+                <td><input id="submitForm" value="confirm" onclick="mySubmitFunction()" style="background-color: #4CAF50;color: white;padding: 12px 20px;border: none;border-radius: 4px;cursor: pointer;float: left;" type='submit'></td>
 
             </tr>
             </tbody>

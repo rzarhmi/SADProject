@@ -1,81 +1,6 @@
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    /*background: linear-gradient(45deg, #49a09d, #5f2c82);*/
+body{
+    margin:0;
     background: #404651;
-    font-family: sans-serif;
-    font-weight: 100;
-}
-
-.table_container {
-    float: none;
-    margin-top: 80px;
-    margin-right: 10%;
-    position: relative;
-    /*top: 70%;*/
-    /*left: 60%;*/
-    /*transform: translate(-50%, -50%);*/
-    margin-left: 10%;
-    width: 80%;
-    /*opacity: ;*/
-    margin-bottom: 50px;
-}
-
-table {
-
-    width: 100%;
-    /*margin-left: 100px;*/
-    max-width: 1400px;
-    /*width: 1000px;*/
-    border-collapse: collapse;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-
-th,
-td {
-
-    max-width: 500px;
-    padding: 15px;
-    background-color: rgba(255,255,255,0.2);
-    color: #fff;
-}
-
-th {
-    text-align: left;
-}
-
-/*thead {*/
-/*th {*/
-/*background-color: #55608f;*/
-/*}*/
-/*}*/
-
-thead > th {
-    background-color: #55608f;
-}
-
-tbody > tr:hover{
-    background-color: rgba(255,255,255,0.3);
-}
-
-tbody > td{
-    position: relative;
-}
-
-tbody > td :hover:before{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -9999px;
-    bottom: -9999px;
-    background-color: rgba(255,255,255,0.2);
-    z-index: -1;
 }
 
 .container {
@@ -130,11 +55,10 @@ nav > ul > li > a::before{
     display: block;
     height: 5px;
     width: 0;
-    top:-5px;
+    top:0;
     background-color: #444;
     position: absolute;
     transition: all ease-in-out 250ms;
-
 }
 
 nav a:hover::before{
@@ -155,27 +79,24 @@ nav a:hover::before{
     font-family: 'Fjalla One', sans-serif;
     font-weight: 900;
     font-size: larger;
-    z-index: 9;
     opacity: 0.9;
 
 }
 
 .topnav .icon{
     display: none;
+
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1100px) {
     .topnav li:not(:last-child){display: none;}
     .topnav a.icon {
         float: left;
         display: block;
     }
-    nav > ul > li > a::before{
-        display: none;
-    }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1100px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
         /*font-size: smaller;*/
@@ -192,8 +113,7 @@ nav a:hover::before{
 
 
 .content {
-    /*padding:
-    16px;*/
+    /*padding: 16px;*/
     /*padding-right: 16px;*/
     /*padding-left: 16px;*/
     /*padding-bottom: 16px;*/
@@ -206,73 +126,11 @@ nav a:hover::before{
     width: 100%
 }
 
-
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
     padding-top: 100px;
     /*opacity: 10;*/
 }
-
-.dropdown {
-    /*float: left;*/
-    overflow: hidden;
-}
-
-.dropbtn{
-    border: none;
-    outline: none;
-    background-color: inherit;
-    font-family: 'Fjalla One', sans-serif;
-    margin: 0;
-    font-weight: 900;
-    font-size: 20px;
-    /*margin-top: 10px;*/
-    /*size: 20;*/
-}
-
-.dropdown {
-    /*font-size: 6px;*/
-    border: none;
-    outline: none;
-    /*color: white;*/
-    /*padding: 14px 16px;*/
-
-    font-family: 'Fjalla One', sans-serif;
-    margin: 0;
-    /*padding-top: 10px;*/
-    /*padding-bottom: 0;*/
-}
-
-.topnav a:hover, .dropdown:hover .dropbtn {
-    /*background-color: red;*/
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 170px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 
 .headPic{
     width:100%;
@@ -288,12 +146,11 @@ nav a:hover::before{
     height: 100%;
     max-width: 100%;
     max-height:100%;
-    opacity: 0.3;
+    /*opacity: 0.3;*/
 }
 .buttons{
     margin-top: 60px;
     margin-left: 160px;
-    background: none;
 }
 
 #commisiionRate {
@@ -398,34 +255,4 @@ nav a:hover::before{
 
 .buttonOut:hover{
     color: firebrick;
-}
-
-
-
-.confirm {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: left;
-}
-.discard{
-    background-color: red;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: left;
-}
-.details{
-    background-color: blue;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: left;
 }

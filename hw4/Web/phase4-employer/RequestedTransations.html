@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="Tests.css" rel="stylesheet" type="text/css">
+<link href="RequestedTransations.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <head>
     <meta charset="UTF-8">
-    <title>My Transactions</title>
+    <title>Requested Transactions</title>
 </head>
 <body>
 
@@ -21,24 +22,19 @@
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn" style="font-style: italic;" >
-                            Reza Rahimi
+                            Navid Padid
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                            <a href="#" style="color: firebrick;">My Transactions</a>
-                            <a href="#">My Wallet</a>
-                            <a href="#">View Profile</a>
                             <a href="#">Edit Profile</a>
-                            <a href="#">Contact Us</a>
                             <a href="#">Log Out</a>
                         </div>
                     </div>
                 </li>
                 <li><a href="#">Home</a> </li>
-                <li><a href="#">convert currencies</a> </li>
-                <li><a href="#">charge credit</a> </li>
-                <li><a href="#">make a transaction</a></li>
-                <li><a href="#">notifications</a></li>
+                <li><a href="#" style="color: white;">Check requested transactions</a> </li>
+                <li><a href="#">previous transactions</a> </li>
+                <li><a href="#">messages</a></li>
                 <!--<li><a href="#">sign up</a> </li>-->
                 <li><a href="javascript:void(0);" class="icon" onclick="navbarResponsive()">
                     <i class="fa fa-bars"></i>
@@ -55,90 +51,58 @@
     <div class="headPic">
     </div>
 
-    <!--<div class="buttons">-->
-
-        <!--<div id="commisiionRate">-->
-            <!--<p class="rounded">-->
-                <!--<button class="buttonOut"><span style="color: #878787"></span> COMMISION RATE <span style="color: #878787"></span></button>-->
-            <!--</p>-->
-        <!--</div>-->
-
-        <!--<div id="convertCurrency">-->
-            <!--<p class="rounded">-->
-                <!--<button class="buttonOut"><span style="color: #878787"></span> CONVERT CURRENCIES <span style="color: #878787"></span></button>-->
-            <!--</p>-->
-        <!--</div>-->
-
-        <!--<div id="laws">-->
-            <!--<p class="rounded">-->
-                <!--<button class="buttonOut"><span style="color: #878787"></span> LAWS and TERMS<span style="color: #878787"></span></button>-->
-            <!--</p>-->
-        <!--</div>-->
-
-        <!--<div id="currencyWorth">-->
-            <!--<p class="rounded">-->
-                <!--<button class="buttonOut"><span style="color: #878787"></span> ONLINE CURRENCY RATE<span style="color: #878787"></span></button>-->
-            <!--</p>-->
-        <!--</div>-->
-
-    <!--</div>-->
-
     <div class="table_container">
         <table>
-            <caption style="color: white; padding-bottom: 20px">My Tansactions</caption>
+            <caption style="color: white; padding-bottom: 20px">Pending Requests</caption>
             <thead>
             <tr>
                 <th>Transaction Type</th>
                 <th>Transaction Code</th>
+                <th>Requested User</th>
                 <th>Date</th>
-                <th>Status</th>
-
+                <th>Confirm</th>
+                <th>Ask Manager</th>
+                <th>Warning</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>Wallet Charged 3000$</td>
-                <td>101101</td>
-                <td>01-07-2016 </td>
-                <td>Finished</td>
-
+                <td>TOEFL Registry</td>
+                <td>110110</td>
+                <td><a href="#" style="color: white">Reza Rahimi</a> </td>
+                <td>06-07-2018</td>
+                <td><input id="button1" type="submit" value="confirm"></td>
+                <td><input id="button1" type="submit" value="ask"></td>
+                <td><input style="height: 100%; width: 100%;"></td>
             </tr>
             <tr>
                 <td>TOEFL Registry</td>
-                <td>101101</td>
-                <td>03-07-2016 </td>
-                <td>Finished</td>
-
+                <td>110110</td>
+                <td><a href="#" style="color: white">Azizam Bebakhshid</a> </td>
+                <td>06-07-2018</td>
+                <td><input type="submit" value="confirm"></td>
+                <td><input type="submit" value="ask"></td>
+                <td><input style="height: 100%; width: 100%;"></td>
+                <!--<td>solid dude, no warns</td>-->
             </tr>
             <tr>
                 <td>GRE Registry</td>
-                <td>102102</td>
-                <td>01-02-2017</td>
-                <td>Finished</td>
+                <td>120120</td>
+                <td><a href="#" style="color: white">Famil Door</a> </td>
+                <td>05-07-2018</td>
+                <td><input type="submit" value="confirm"></td>
+                <td><input type="submit" value="ask"></td>
+                <td><input style="height: 100%; width: 100%;"></td>
+                <!--<td>solid dude, no warns</td>1-->
+            </tr>
 
-            </tr>
-            <tr>
-                <td>IELTS Registry</td>
-                <td>103103</td>
-                <td>01-06-2018</td>
-                <td>Waitting for Approval</td>
-            </tr>
-            <tr>
-                <td>Wallet Charged 2000$</td>
-                <td>5050</td>
-                <td>05-06-2018</td>
-                <td>Finished</a></td>
-
-            </tr>
             </tbody>
         </table>
     </div>
 
 
+
 </div>
-
-
-
 
 
 <script>
@@ -176,6 +140,7 @@
 
 
 </script>
+
 
 
 
