@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<body>
+
+
+<div class="content">
+
+<ul class="list-group">
+  <li class="list-group-item active"> <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-8">
+        <div class="col-sm-4">
+          <h2 class="mt-4">Contact Us</h2>
+          <address>
+            <strong>Start Bootstrap</strong>
+            <br>3481 Melrose Place
+            <br>Beverly Hills, CA 90210
+            <br>
+          </address>
+          <address>
+            <abbr title="Phone">Phone:</abbr>
+            (123) 456-7890
+            <br>
+            <abbr title="Email">Email:</abbr>
+            <a>name@example.com</a>
+          </address>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    </li>
+
+</ul>
+
+</div>
+
+
+<script>
+
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    //    alert(header)
+    var sticky = header.offsetTop;
+    function myFunction() {
+
+//                alert(window.pageYOffset)
+//        alert(header.className)
+//        alert(sticky)
+        if (window.pageYOffset >= sticky) {
+            header.classList.add("sticky");
+//            alert("dundun")
+        } else {
+            header.classList.remove("sticky");
+//            alert("dundun")
+        }
+    }
+
+
+
+    function navbarResponsive() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+
+
+</script>
+
+</body>
+</html>

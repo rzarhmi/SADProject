@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<body>
+
+
+<div class="content">
+
+<ul class="list-group">
+  <li class="list-group-item active"> <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="mt-4">What We Do</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+
+        </div>
+      </div>
+    </div>
+    </li>
+
+</ul>
+
+</div>
+
+
+<script>
+
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    //    alert(header)
+    var sticky = header.offsetTop;
+    function myFunction() {
+
+//                alert(window.pageYOffset)
+//        alert(header.className)
+//        alert(sticky)
+        if (window.pageYOffset >= sticky) {
+            header.classList.add("sticky");
+//            alert("dundun")
+        } else {
+            header.classList.remove("sticky");
+//            alert("dundun")
+        }
+    }
+
+
+
+    function navbarResponsive() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+
+
+</script>
+
+</body>
+</html>
