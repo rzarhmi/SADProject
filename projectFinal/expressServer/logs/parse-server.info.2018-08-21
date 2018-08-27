@@ -1,0 +1,10 @@
+{"code":209,"message":"Invalid session token","level":"error","timestamp":"2018-08-21T09:32:59.042Z"}
+{"code":209,"message":"Invalid session token","level":"error","timestamp":"2018-08-21T09:33:10.670Z"}
+{"code":209,"message":"Invalid session token","level":"error","timestamp":"2018-08-21T09:36:15.498Z"}
+{"code":209,"message":"Invalid session token","level":"error","timestamp":"2018-08-21T09:38:25.787Z"}
+{"error":{"code":125,"message":"Email address format is invalid."},"level":"error","message":"Error generating response. ParseError { code: 125, message: 'Email address format is invalid.' }","timestamp":"2018-08-21T09:39:43.824Z"}
+{"code":125,"message":"Email address format is invalid.","level":"error","timestamp":"2018-08-21T09:39:43.826Z"}
+{"error":{"code":101,"message":"Invalid username/password."},"level":"error","message":"Error generating response. ParseError { code: 101, message: 'Invalid username/password.' }","timestamp":"2018-08-21T10:14:46.157Z"}
+{"code":101,"message":"Invalid username/password.","level":"error","timestamp":"2018-08-21T10:14:46.159Z"}
+{"error":{"code":201,"message":"password is required."},"level":"error","message":"Error generating response. ParseError { code: 201, message: 'password is required.' }","timestamp":"2018-08-21T10:57:46.168Z"}
+{"code":201,"message":"password is required.","level":"error","timestamp":"2018-08-21T10:57:46.170Z"}

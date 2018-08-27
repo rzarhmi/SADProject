@@ -1,0 +1,4 @@
+{"error":{"code":206,"message":"Cannot modify user cbwTp4ooC3."},"level":"error","message":"Error generating response. ParseError { code: 206, message: 'Cannot modify user cbwTp4ooC3.' }","timestamp":"2018-08-25T17:47:21.738Z"}
+{"code":206,"message":"Cannot modify user cbwTp4ooC3.","level":"error","timestamp":"2018-08-25T17:47:21.741Z"}
+{"error":{"code":206,"message":"Cannot modify user nXkfLr34LR."},"level":"error","message":"Error generating response. ParseError { code: 206, message: 'Cannot modify user nXkfLr34LR.' }","timestamp":"2018-08-25T17:53:00.433Z"}
+{"code":206,"message":"Cannot modify user nXkfLr34LR.","level":"error","timestamp":"2018-08-25T17:53:00.435Z"}

@@ -1,0 +1,22 @@
+{"error":{"code":111,"message":"schema mismatch for Transactions.Amount; expected Number but got String"},"level":"error","message":"Error generating response. ParseError {\n  code: 111,\n  message: 'schema mismatch for Transactions.Amount; expected Number but got String' }","timestamp":"2018-08-24T10:20:59.487Z"}
+{"code":111,"message":"schema mismatch for Transactions.Amount; expected Number but got String","level":"error","timestamp":"2018-08-24T10:20:59.492Z"}
+{"error":{"code":111,"message":"schema mismatch for Transactions.Amount; expected Number but got String"},"level":"error","message":"Error generating response. ParseError {\n  code: 111,\n  message: 'schema mismatch for Transactions.Amount; expected Number but got String' }","timestamp":"2018-08-24T10:21:05.303Z"}
+{"code":111,"message":"schema mismatch for Transactions.Amount; expected Number but got String","level":"error","timestamp":"2018-08-24T10:21:05.304Z"}
+{"error":{"code":111,"message":"schema mismatch for Transactions.Amount; expected Number but got String"},"level":"error","message":"Error generating response. ParseError {\n  code: 111,\n  message: 'schema mismatch for Transactions.Amount; expected Number but got String' }","timestamp":"2018-08-24T10:22:40.660Z"}
+{"code":111,"message":"schema mismatch for Transactions.Amount; expected Number but got String","level":"error","timestamp":"2018-08-24T10:22:40.662Z"}
+{"error":{"code":111,"message":"schema mismatch for Transactions.Amount; expected Number but got String"},"level":"error","message":"Error generating response. ParseError {\n  code: 111,\n  message: 'schema mismatch for Transactions.Amount; expected Number but got String' }","timestamp":"2018-08-24T10:23:31.756Z"}
+{"code":111,"message":"schema mismatch for Transactions.Amount; expected Number but got String","level":"error","timestamp":"2018-08-24T10:23:31.757Z"}
+{"error":{"code":101,"message":"Invalid username/password."},"level":"error","message":"Error generating response. ParseError { code: 101, message: 'Invalid username/password.' }","timestamp":"2018-08-24T10:25:02.841Z"}
+{"code":101,"message":"Invalid username/password.","level":"error","timestamp":"2018-08-24T10:25:02.844Z"}
+{"error":{"code":111,"message":"schema mismatch for Transactions.Amount; expected String but got Number"},"level":"error","message":"Error generating response. ParseError {\n  code: 111,\n  message: 'schema mismatch for Transactions.Amount; expected String but got Number' }","timestamp":"2018-08-24T10:25:38.328Z"}
+{"code":111,"message":"schema mismatch for Transactions.Amount; expected String but got Number","level":"error","timestamp":"2018-08-24T10:25:38.329Z"}
+{"error":{"code":101,"message":"Invalid username/password."},"level":"error","message":"Error generating response. ParseError { code: 101, message: 'Invalid username/password.' }","timestamp":"2018-08-24T11:29:54.157Z"}
+{"code":101,"message":"Invalid username/password.","level":"error","timestamp":"2018-08-24T11:29:54.159Z"}
+{"error":{"code":111,"message":"ACL is required."},"level":"error","message":"Error generating response. ParseError { code: 111, message: 'ACL is required.' }","timestamp":"2018-08-24T13:51:16.773Z"}
+{"code":111,"message":"ACL is required.","level":"error","timestamp":"2018-08-24T13:51:16.774Z"}
+{"error":{"code":206,"message":"Insufficient auth."},"level":"error","message":"Error generating response. ParseError { code: 206, message: 'Insufficient auth.' }","timestamp":"2018-08-24T15:14:08.008Z"}
+{"code":206,"message":"Insufficient auth.","level":"error","timestamp":"2018-08-24T15:14:08.009Z"}
+{"error":{"code":206,"message":"Insufficient auth."},"level":"error","message":"Error generating response. ParseError { code: 206, message: 'Insufficient auth.' }","timestamp":"2018-08-24T15:15:40.710Z"}
+{"code":206,"message":"Insufficient auth.","level":"error","timestamp":"2018-08-24T15:15:40.711Z"}
+{"error":{"code":206,"message":"Insufficient auth."},"level":"error","message":"Error generating response. ParseError { code: 206, message: 'Insufficient auth.' }","timestamp":"2018-08-24T15:15:44.255Z"}
+{"code":206,"message":"Insufficient auth.","level":"error","timestamp":"2018-08-24T15:15:44.257Z"}
