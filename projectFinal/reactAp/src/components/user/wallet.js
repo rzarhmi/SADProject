@@ -82,39 +82,20 @@ class Wallet extends Component {
               <tr>
                 <th>Currency</th>
                 <th>Amount</th>
-                <th>Charge</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Euro</td>
                 <td>{this.state.euro}</td>
-                <td>
-                  <a href="#" style={{
-                      color: "white",
-                      fontStyle: "italic"
-                    }}>charge</a>
-                </td>
               </tr>
               <tr>
                 <td>Dollar</td>
                 <td>{this.state.dollar}</td>
-                <td>
-                  <a href="#" style={{
-                      color: "white",
-                      fontStyle: "italic"
-                    }}>charge</a>
-                </td>
               </tr>
               <tr>
                 <td>Rial</td>
                 <td>{this.state.rial}</td>
-                <td>
-                  <a href="#" style={{
-                      color: "white",
-                      fontStyle: "italic"
-                    }}>charge</a>
-                </td>
               </tr>
             </tbody>
           </table>

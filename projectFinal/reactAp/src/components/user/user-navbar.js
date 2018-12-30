@@ -97,19 +97,19 @@ class UserNavBar extends Component {
                       <Link to={"/"}>Home</Link>
                     </li>
                     <li>
-                      <Link to={"/user/convertCurrency"}>convert currencies</Link>
+                      <Link to={"/user/convertCurrency"} id="convert_currency">convert currencies</Link>
                     </li>
                     <li>
-                      <Link to={"/user/chargeCredit"}>Charge Credit</Link>
+                      <Link to={"/user/chargeCredit"} id="charge_credit">Charge Credit</Link>
                     </li>
                     <li>
-                      <Link to={"/user/tests"}>register for a test</Link>
+                      <Link to={"/user/tests"} id="test_register">register for a test</Link>
                     </li>
                     <li>
                       <Link to="/user/notifications">notifications</Link>
                     </li>
                     <li>
-                      <Link to="/user/transfer">Transfer</Link>
+                      <Link to="/user/transfer" id={"transfer"}>Transfer</Link>
                     </li>
                     <li>
                       <a href="javascript:void(0);" className="icon" onClick={this.navbarResponsive}>

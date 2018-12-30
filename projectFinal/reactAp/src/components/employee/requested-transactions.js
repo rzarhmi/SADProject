@@ -219,15 +219,16 @@ class RequestedTransactions extends Component {
                     Notif.set("Text", "Conversion Done Successfully")
                     Notif.save()
                     alert("Done");
+                    break;
 
                 case "Transfer":
-                    destCurrValue = transaction[0].get('Amount')
-                    destCurr = transaction[0].get('DestCurr')
-                    Currencies = Parse.Object.extend("Currencies")
-                    query = new Parse.Query(Currencies)
-                    query.equalTo("Name", destCurr)
-                    rials = await query.find()
-                    rials = rials[0].get("Rials")
+                    destCurrValue = transaction[0].get('Amount');
+                    destCurr = transaction[0].get('DestCurr');
+                    Currencies = Parse.Object.extend("Currencies");
+                    query = new Parse.Query(Currencies);
+                    query.equalTo("Name", destCurr);
+                    rials = await query.find();
+                    rials = rials[0].get("Rials");
 
                     rials = parseInt(rials) * parseInt(destCurrValue)
 
@@ -303,7 +304,7 @@ class RequestedTransactions extends Component {
                       <td>{value[4]}</td>
                       <td>
                         <Link to="/employee">
-                          <button type="button" style={{
+                          <button id={"button_confirm_"+i} type="button" style={{
                               backgroundColor: "Green",
                               color: "white",
                               padding: "12px 20px",
@@ -316,7 +317,7 @@ class RequestedTransactions extends Component {
                       </td>
                       <td>
                         <Link to="/employee">
-                          <buttion type="button" style={{
+                          <buttion id={"button_cancel_"+i} type="button" style={{
                               backgroundColor: "Red",
                               color: "white",
                               padding: "12px 20px",

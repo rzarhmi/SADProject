@@ -21,8 +21,8 @@ class UserList extends Component {
   constructor(props) {
     super(props);
     Parse.initialize("myAppId123456", '1xoWtDkxw8oZvX3bzhdTuHU7KZB8SGZD9jWQ2V9p');
-    Parse.serverURL = 'http://localhost:8030/wp';
-    this.getDataFromServer = this.getDataFromServer.bind(this);
+      Parse.serverURL = 'http://localhost:8030/wp';
+      this.getDataFromServer = this.getDataFromServer.bind(this);
     this.state = {
       users: []
     }
@@ -36,7 +36,7 @@ class UserList extends Component {
   */
   async getDataFromServer() {
     let query = new Parse.Query(Parse.User);
-    query.notEqualTo("username", "admin");
+    query.notEqualTo("username", "adminadmin");
     let results = await query.find();
     for (let i = 0; i < results.length; i++) {
       results[i] = [

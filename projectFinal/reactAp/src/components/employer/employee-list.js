@@ -21,8 +21,8 @@ class EmployeeList extends Component {
   constructor(props) {
     super(props);
     Parse.initialize("myAppId123456", '1xoWtDkxw8oZvX3bzhdTuHU7KZB8SGZD9jWQ2V9p');
-    Parse.serverURL = 'http://localhost:8030/wp';
-    this.getDataFromServer = this.getDataFromServer.bind(this);
+      Parse.serverURL = 'http://localhost:8030/wp';
+      this.getDataFromServer = this.getDataFromServer.bind(this);
     this.state = {
       users: []
     }
@@ -38,12 +38,18 @@ class EmployeeList extends Component {
     let query = new Parse.Query(Parse.User);
     query.equalTo("Type", "employee");
     let results = await query.find();
+
     for (let i = 0; i < results.length; i++) {
+        let salary = Parse.Object.extend('Salary');
+        query = new Parse.Query(salary);
+        query.equalTo("username",results[i].get("username"))
+        let resultss = await query.find()
+
       results[i] = [
         results[i].get("username"),
         results[i].createdAt,
         results[i].updatedAt,
-        results[i].get("salary")
+        resultss[0].get("amount")
       ];
     }
     console.log(results);
@@ -133,9 +139,16 @@ class EmployeeList extends Component {
                   <td>
                     <p>{value[2].toLocaleString()}</p>
                   </td>
-                  <td><input onClick={(e) => this.handleClick(e, i)} type="submit" value="change" style={{
-                    backgroundColor: "blue"
-                  }}/></td>
+                  <td><Link to="/employer">
+                    <buttion type="button" onClick={(e) => this.handleClick(e, i)}  style={{
+                      backgroundColor: "blue", padding: "12px 20px",
+                      border: "none",
+                      borderRadius: "4px",
+                      cursor: "pointer",
+                      color: 'white'
+                  }}>Change</buttion>
+                  </Link>
+                  </td>
                   <td><input id={(i * 32) + 32} type="text" placeholder="new salary (Rial)"/></td>
                   <td>
                     <p>{value[3].toLocaleString()}</p>

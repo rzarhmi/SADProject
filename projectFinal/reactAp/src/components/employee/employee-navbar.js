@@ -22,8 +22,8 @@ class EmployeeNavbar extends Component {
   constructor(props) {
     super(props);
     Parse.initialize("myAppId123456", '1xoWtDkxw8oZvX3bzhdTuHU7KZB8SGZD9jWQ2V9p');
-    Parse.serverURL = 'http://localhost:8030/wp';
-    this.getDataFromServer = this.getDataFromServer.bind(this);
+      Parse.serverURL = 'http://localhost:8030/wp';
+      this.getDataFromServer = this.getDataFromServer.bind(this);
     this.handleLogOut = this.handleLogOut.bind(this);
     this.state = {
       username: []
@@ -83,7 +83,7 @@ class EmployeeNavbar extends Component {
               <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <Link to={"/employee/reqTransactions"}>Check requested transactions</Link>
+              <Link to={"/employee/reqTransactions"} id={"check_requested_transactions"}>Check requested transactions</Link>
             </li>
             <li>
               <Link to={"/employee/transactions"}>previous transactions</Link>

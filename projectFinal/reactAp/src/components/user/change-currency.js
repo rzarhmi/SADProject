@@ -21,8 +21,8 @@ class ChangeCurrency extends Component {
   constructor(props) {
     super(props);
     Parse.initialize("myAppId123456", '1xoWtDkxw8oZvX3bzhdTuHU7KZB8SGZD9jWQ2V9p');
-    Parse.serverURL = 'http://localhost:8030/wp';
-    this.getDataFromServer = this.getDataFromServer.bind(this);
+      Parse.serverURL = 'http://localhost:8030/wp';
+      this.getDataFromServer = this.getDataFromServer.bind(this);
     this.handleConvert = this.handleConvert.bind(this);
     this.state = {
       euro: [],
@@ -56,11 +56,11 @@ class ChangeCurrency extends Component {
 
     this.setState({euro: euro, dollar: dollar})
   }
-  /*    Function for handling user's request based on what
-        button or request he/she has made. This function uses
-        queries from the database, and our component's state to
-        handle the request.
-  */
+
+    /*    Function for handling user's request based on what
+          button or request he/she has made. This function uses
+          queries from the database, and our component's state to
+          handle the request. */
 
   async handleConvert() {
     let initCurrValue = parseInt(document.getElementById('destcurr-value').value);

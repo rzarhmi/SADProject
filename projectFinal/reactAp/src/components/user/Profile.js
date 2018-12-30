@@ -23,8 +23,7 @@ class Profile extends Component {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     Parse.initialize("myAppId123456", '1xoWtDkxw8oZvX3bzhdTuHU7KZB8SGZD9jWQ2V9p');
-    Parse.serverURL = 'http://localhost:8030/wp';
-  }
+      Parse.serverURL = 'http://localhost:8030/wp';  }
   /*    Function for handling user's request based on what
           button or request he/she has made. This function uses
           queries from the database, and our component's state to
@@ -78,9 +77,9 @@ class Profile extends Component {
     if (values[8].value)
       currentUser.set("birthdate", values[8].value);
     currentUser.save(null, {
-      success: function(user) {
+      success: function() {
         // Execute any logic that should take place after the object is saved.
-        alert("user updated");
+        alert("user " + values[3].value + " updated!");
       },
       error: function(user, error) {
         // Execute any logic that should take place if the save fails.

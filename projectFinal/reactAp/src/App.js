@@ -41,7 +41,6 @@ import onlineCurrency from './components/onlineCurrency'
 import convertTest from './components/convertCurrency'
 import Transfer from './components/user/transfer'
 
-
 class App extends Component {
     render(){
         return(
@@ -49,7 +48,11 @@ class App extends Component {
             <div>
                 <BrowserRouter>
                 <Switch>
+                    //route /
                     <Route exact path={"/"} component={HomePage}/>
+
+
+                    <Route exact path={"/home"} component={HomePage}/>
                     <Route exact path={"/user"} component={UserHome}/>
                     <Route exact path={"/user/convertCurrency"} component={ChangeCurrency}/>
                     <Route exact path={"/user/contactUs"} component={ContactUs}/>
@@ -87,7 +90,7 @@ class App extends Component {
                     <Route exact path={"/converttest"} component={convertTest}/>
                     <Route exact path={"/user/transfer"} component={Transfer}/>
 
-                    {/*<Route exact path={"/sih"} component={navbar}/>*/}
+
                     <Route exact path={"/ok"} component={LogIn}/>
 
 

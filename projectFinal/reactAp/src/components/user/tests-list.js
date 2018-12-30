@@ -82,35 +82,43 @@ class TestList extends Component {
     */
 
   handleClick(e, i) {
-    let name = document.getElementById(i).innerHTML;
-    for (var i = 0; i < this.state.tests.length; i++) {
-      let x = this.state.tests[i]
-      let userRial = this.state.userRial
-      let cost = parseInt(x[2])
-      if (x[0] == name) {
-        if (userRial > cost) {
-          const Transactions = Parse.Object.extend("Transactions");
-          const transactions = new Transactions();
-          let user = Parse.User.current();
-          let userName = user.get("username")
-          transactions.set("User", userName);
-          transactions.set("Type", "Test");
-          transactions.set("Status", "Pending");
-          transactions.set("Amount", cost.toString());
-          transactions.set("Test", name);
-          transactions.save().then((transactions) => {
-            // Execute any logic that should take place after the object is saved.
-            alert("Test Submitted");
-          }, (error) => {
-            // Execute any logic that should take place if the save fails.
-            // error is a Parse.Error with an error code and message.
-            alert("Test Failed");
-          });
-        } else {
-          alert('Not enough rial balance in your account')
+    let sure = window.confirm("are you sure?!");
+    if (sure){
+        let name = document.getElementById(i).innerHTML;
+        for (var i = 0; i < this.state.tests.length; i++) {
+            let x = this.state.tests[i]
+            let userRial = this.state.userRial
+            let cost = parseInt(x[2])
+            if (x[0] == name) {
+                if (userRial > cost) {
+                    const Transactions = Parse.Object.extend("Transactions");
+                    const transactions = new Transactions();
+                    let user = Parse.User.current();
+                    let userName = user.get("username")
+                    transactions.set("User", userName);
+                    transactions.set("Type", "Test");
+                    transactions.set("Status", "Pending");
+                    transactions.set("Amount", cost.toString());
+                    transactions.set("Test", name);
+                    transactions.save().then((transactions) => {
+                        // Execute any logic that should take place after the object is saved.
+                        alert("Test Submitted");
+                    }, (error) => {
+                        // Execute any logic that should take place if the save fails.
+                        // error is a Parse.Error with an error code and message.
+                        alert("Test Failed");
+                    });
+                } else {
+                    alert('Not enough rial balance in your account')
+                }
+            }
         }
-      }
+
     }
+    else {
+      alert("Operation canceled")
+    }
+
 
   }
   /*    Render function of our Component to display required HTML code.
@@ -155,7 +163,7 @@ class TestList extends Component {
 
                   </td>
                   <td>
-                    <button type="confirm" onClick={(e) => this.handleClick(e, i)}>Choose</button>
+                    <button id={"confirm_test_register"} type="confirm" onClick={(e) => this.handleClick(e, i)}>Choose</button>
                   </td>
                 </tr>)
               }
